@@ -55,7 +55,7 @@
 				<div>
 					<div class="row mb-5">
 						<div class="col-xl-6 d-flex justify-content-center align-items-center">
-							<img src="assets/images/profile.png" class="profile-img" width="300">
+							<img src="assets/images/profile.png" class="profile-img" alt="" width="300">
 						</div>
 						<div class="col-xl-6 d-flex justify-content-center align-items-center">
 							<div class="text-center name-headings my-3">
@@ -78,7 +78,7 @@
 					</p>
 
 					<div class="social-icons" style="font-size: 50px;">
-						<a class="social-icon" href="https://www.google.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
 						<a class="social-icon" href="#"><i class="fab fa-github"></i></a>
 						<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
 						<a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -93,28 +93,110 @@
 					<div class="heading">
 						<span><strong>Education</strong></span>
 					</div>
-
+					<!-- 
+						d-flex : display is flex 
+						flex-column : content are arranged vertically
+						flex-md-row : content are arranged horizontally for screen size > md (992px i.e small laptops)
+						justify-content-between : justifies the content with some space between them!
+						mb-5: Gives margin bottom of $spacer*3, as here we have not specified the spacer, it will be 3rem (font size changes with respect to the font size of root)
+					-->
 					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 						<div class="flex-grow-1">
-							<h3 class="mb-0 text-uppercase text-white">Ahmedabad University</h3>
-							<div class="subheading mb-3 text-uppercase text-white">ICT </div>
-							<div class="text-secondary"> Physics</div>
-							<p class="text-secondary">CGPA = 4/4</p>
+							<h3 class="mb-0 text-uppercase">Ahemabad University</h3>
+							<div class="subheading mb-3 text-uppercase">Bachelor of Science</div>
+							<div class="text-secondary">Computer Science - Web Development Track
+							</div>
+							<p class="text-secondary">GPA: 3.23</p>
 						</div>
-						<div class="flex-shrink-0 text-danger">
-							July 2018 - April 2022
-						</div>
+						<div class="flex-shrink-0 text-danger">August 2006 - May 2010</div>
 					</div>
 
 					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 						<div class="flex-grow-1">
-							<h3 class="mb-0 text-uppercase">Ahmedabad University</h3>
-							<div class="subheading mb-3 text-uppercase">ICT </div>
-							<div class="text-secondary"> Physics</div>
-							<p class="text-secondary">CGPA = 4/4</p>
+							<h3 class="mb-0 text-uppercase">Ahemabad University</h3>
+							<div class="subheading mb-3 text-uppercase">Bachelor of Science</div>
+							<div class="text-secondary">Computer Science - Web Development Track
+							</div>
+							<p class="text-secondary">GPA: 3.23</p>
 						</div>
-						<div class="flex-shrink-0 text-danger">
-							July 2018 - April 2022
+						<div class="flex-shrink-0 text-danger">August 2006 - May 2010</div>
+					</div>
+
+				</div>
+			</div>
+
+			<hr class="border-secondary"> <!--hr is for thematic sections split and border-secondary is for providing border with bootstrap color : secondary (greyish) -->
+
+			<!-- In py-5 p is for padding and y is for both top and bottom -->
+			<div class="container section py-5" id="projects">
+				<div>
+					<div class="heading">
+						<span><strong>My Projects</strong></span>
+					</div>
+					<div class="card-columns text-center">
+						<div class="card p-3">
+							<img class="card-img-top" src="assets/images/project.svg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Card title that wraps to a new line</h5>
+								<p class="card-text">This is a longer card with supporting text
+									below as
+									a natural lead-in to additional content. This content is a
+									little
+									bit longer.</p>
+							</div>
+						</div>
+						<div class="card p-3">
+							<div class="blockquote mb-0 card-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+									posuere erat a ante.</p>
+								
+							</div>
+						</div>
+						<div class="card p-3">
+							<img class="card-img-top" src="assets/images/project.svg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This card has supporting text below as a
+									natural
+									lead-in to additional content.</p>
+								
+							</div>
+						</div>
+						<div class="card text-center p-3">
+							<div class="blockquote mb-0">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+									posuere erat.</p>
+								
+							</div>
+						</div>
+						<div class="card text-center">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This card has supporting text below as a
+									natural
+									lead-in to additional content.</p>
+								
+							</div>
+						</div>
+						<div class="card p-3">
+							<img class="card-img" src="assets/images/project.svg" alt="Card image">
+						</div>
+						<div class="card p-3 text-right">
+							<div class="blockquote mb-0">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+									posuere erat a ante.</p>
+								
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a wider card with supporting text below
+									as
+									a natural lead-in to additional content. This card has even
+									longer
+									content than the first to show that equal height action.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -127,36 +209,53 @@
 					<div class="heading">
 						<span><strong>Skills</strong></span>
 					</div>
-
-					<div class="progress" style="height: 20px;">
-						<div class="progress-bar bg-info" role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-							<strong> HTML</strong>
+					<div class="progress">
+						<div class="progress-bar bg-success" role="progressbar"
+							style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+							aria-valuemax="100">
+							<strong> Java </strong>
 						</div>
 					</div>
 					&nbsp;
-					<div class="progress" style="height: 20px;">
-						<div class="progress-bar bg-danger" role="progressbar" style="width:75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-							<strong> CSS </strong>
+					<div class="progress">
+						<div class="progress-bar bg-info" role="progressbar"
+							style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+							aria-valuemax="100">
+							<strong> Ruby </strong>
 						</div>
 					</div>
 					&nbsp;
-					<div class="progress" style="height: 20px;">
-						<div class="progress-bar" role="progressbar" style="width:25%; background-color: blue;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress">
+						<div class="progress-bar bg-warning" role="progressbar"
+							style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+							aria-valuemax="100">
 							<strong> C++ </strong>
 						</div>
 					</div>
 					&nbsp;
+					<div class="progress">
+						<div class="progress-bar bg-danger" role="progressbar"
+							style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+							aria-valuemax="100"><strong> HTML </strong></div>
+					</div>
+					&nbsp;
+
 					<p class="my-5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur nobis odit necessitatibus! Molestias harum est blanditiis laborum voluptatibus eum vitae asperiores! Quod ab qui earum aspernatur? Nihil, quas et?
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus aliquam
+						itaque dolores mollitia esse ducimus quaerat corporis dolorum doloribus iure
+						eligendi nemo at, natus accusamus, velit soluta tempora quis dolore!. Lorem
+						ipsum dolor, sit amet consectetur adipisicing elit. Temporibus aliquam
+						itaque dolores mollitia esse ducimus quaerat corporis dolorum doloribus iure
+						eligendi nemo at, natus accusamus, velit soluta tempora quis dolore!.
 					</p>
-					<span class="text-danger"><strong>Other skills</strong></span>
+					<span class="text-danger" style="font-size: larger;">
+						<strong> OTHER SKILLS:</strong>
+					</span>
 					<p>
-						PHP | Django | etc
+						<strong> PHP | XYZ | PQR | ABC</strong>
 					</p>
 				</div>
 			</div>
-
-
 
 		</div>
 	</main>
