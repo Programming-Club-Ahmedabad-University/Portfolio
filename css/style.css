@@ -1,0 +1,44 @@
+/* Normally(when scren-width <= 991), toggler is visible
+	- Make navbar sticky */
+.sidebar {
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #000;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* When scren-width exceeds 991px
+    - Covert to sidebar
+    - Add margin-left to content */
+@media screen and (min-width: 992px) {
+  .sidebar {
+    width: 250px !important;
+    position: fixed !important;
+    height: 100vh;
+
+    /* To fix vertical scroll of the sidebar */
+    overflow-x: hidden;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  .content {
+    margin-left: 250px;
+  }
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
